@@ -1,0 +1,49 @@
+<!-- 
+3) Write an HTML using internal CSS that has 3 Text Input Fields
+All should shown in one line
+Set the left and right margins to appropriate space
+Set the border to solid blue
+Set border size properly
+Below this show an image , show a rounded border in red color to image
+Adjust the top margin of image to have proper distance from texfields -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .j{
+            margin: 0px 10px;
+            display: inline-block;
+            border: 2px solid blue;
+        }
+        img{
+             margin-top: 20px;
+             border:2px solid red;
+             background-repeat: no-repeat;
+             border-radius: 200px;
+             margin-left:100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="j">
+        <label for="i1">Input1</label>
+        <input type="text" id="i1">
+        </div>
+        <div class="j">
+        <label for="i2">Input2</label>
+        <input type="text" id="i2">
+        </div>
+        <div class="j">
+        <label for="i3">input3</label>
+        <input type="text" id="i3"></form>
+        </div>
+        <div id="car">
+            <img src="ab.webp" alt="car image"  height="300" width="500">
+        </div>
+</body>
+</html>

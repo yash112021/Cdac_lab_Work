@@ -1,0 +1,59 @@
+<!-- 2) Perform the form validations as shown in Lecture
+  for name and age 
+   and display error message if it not valid  -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+
+    <!-- css -->
+     <style>
+        .errorMSg{
+          display: none;
+        }
+     </style>
+        
+   </head>
+   <body>
+       <form action="" onsubmit="return hello()" name="f1">
+         <input type="text" name="stdname" id="stdname">
+          <p  class="errorMSg"><i>Please Enter the Name</i></p>
+          <br>
+          <label for="age">Enter Age</label>
+          <input type="text" id="age">
+          <br>
+          <p class="errorMSg"><i >Please Enter age This field cannot be empty</i></p>
+
+        <input type="submit">
+        </form>
+
+        <button type="button" onclick="hello()">on Click</button>
+   </body>
+
+   <script >
+
+         function hello(){
+console.log("hi");
+          var name=document.forms["f1"]["stdname"].value;
+var age=document.forms["f1"]["age"].value;
+
+if(name.trim()==""){
+
+  console.log("visible");
+  document.getElementsByClassName("errorMSg")[0].style.display = 'inline'
+   // document.getElementsByClassName("errorMSg")[0].style.visibilty = 'visible'
+    return false;
+}
+else{
+    document.getElementsByClassName("errorMSg")[0].style.visibilty="hidden";
+}
+
+          return false;
+         }
+
+        
+        </script>
+   </html>

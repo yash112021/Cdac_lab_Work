@@ -1,0 +1,43 @@
+<!-- 5) use try and catch and finally block in JavaScript  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assign 5 day9</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+`   <p>try catch block</p>
+
+    <script>
+        function namste(){
+            let a=50;
+            function hello(){
+                let b=50;
+            }
+
+            
+            // console.log(b);
+            // console.log("how are you");
+
+
+
+            try{
+            console.log(b);  // this part will give me error we are trying to access the variable outside the fuction scope
+            }catch (e){
+                console.log(e+"some error has being occured");
+            }   
+            // when the error comes the below code will not work so we will hanclde
+            console.log("how areyou ");
+            
+            
+            hello();
+        }
+
+        // call to the fuction
+        namste();
+    </script>
+</body>
+</html>
