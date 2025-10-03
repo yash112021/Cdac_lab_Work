@@ -1,50 +1,77 @@
-// accept the data in text field and 3 radio button for the uppercase lowecase and title case
- import './Helo.css';
 
+// 3)  accept data in textfield and take 3 radio buttons 
+//      on  -  uppercase , lowercase and Title Case 
 
- import React, { useState } from 'react'
+// on selection on that Radio button display appropiate output 
 
+import './Helo.css'
+import React, { useState } from 'react'
 
- export default function Assign3() {
-   const [data,setData]=useState(0);
-            let a="Enter your data"
-        
-        let uppercaseHandling=(e)=>{
+export default function Assign3() {
+  const [data, setData] = useState('')
+  const [caseType, setCaseType] = useState('uppercase')
 
-            const upperText = this.state.data.toUppercase();
-            this.setData({text.upperText})
-            setData(e.target.value);
-        }
-        console.log(setData);
+  const toTitleCase = (str) => {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+  }
 
+  let output = data
+  if (caseType === 'uppercase') output = data.toUpperCase()
+  else if (caseType === 'lowercase') output = data.toLowerCase()
+  else if (caseType === 'titlecase') output = toTitleCase(data)
 
-
-
-
-    return (
-    <>       <div>
-        
-        <div class="textfiel" style={{display:"inline-block", marginLeft: "300px"}}>
-            <h1><b>{a}</b></h1>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" cols="50" value={data.text}></textarea>
-                </div>
-                <div class="buttns my-3">
-                <button onClick={uppercaseHandling}>UpperCase</button>
-                <button  onClick={lowercaseHandling}>Lowercase</button>
-                <button  onClick={titlecaseHandling}>Title Case</button>
-                </div>
+  return (
+    <>
+      <div style={{display: "inline-block", marginLeft: "300px"}}>
+        <h1><b>Enter your data</b></h1>
+        <div className="mb-3">
+          <textarea
+            className="form-control"
+            rows="4"
+            cols="50"
+            value={data}
+            onChange={e => setData(e.target.value)}
+          ></textarea>
         </div>
-     </div>
-     <div id="para">
-        <p>
+        <div className="buttns my-3">
+          <input
+            type="radio"
+            id="uppercase"
+            value="uppercase"
+            checked={caseType === 'uppercase'}
+            onChange={() => setCaseType('uppercase')}
+          />
+          <label htmlFor="uppercase">UpperCase</label>
 
+          <input
+            type="radio"
+            id="lowercase"
+            value="lowercase"
+            checked={caseType === 'lowercase'}
+            onChange={() => setCaseType('lowercase')}
+            style={{ marginLeft: '10px' }}
+          />
+          <label htmlFor="lowercase">Lowercase</label>
 
-        </p>
-     </div>
-     </>
+          <input
+            type="radio"
+            id="titlecase"
+            value="titlecase"
+            checked={caseType === 'titlecase'}
+            onChange={() => setCaseType('titlecase')}
+            style={{ marginLeft: '10px' }}
+          />
+          <label htmlFor="titlecase">Title Case</label>
+        </div>
+      </div>
+      <div id="para">
+        <p>{output}</p>
+      </div>
+    </>
+  )
+}
 
-   )
- }
- 

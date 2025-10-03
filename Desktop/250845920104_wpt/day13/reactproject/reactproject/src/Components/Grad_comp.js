@@ -120,7 +120,7 @@ export default function UserDetails() {
         <option value="UnderGrad">UnderGrad</option>
       </select>
 
-      {education === 'Graduate' && <GraduateComponent />}
+      {education === 'Graduate' && < Grad_comp />}
       {education === 'PG' && <PGComponent />}
       {education === 'UnderGrad' && <UnderGradComponent />}
     </div>
