@@ -1,0 +1,24 @@
+*{
+    background-color:rgb(181, 181, 108);
+}
+
+
+
+.outside{
+    width: 30%;
+    height: 300px;
+    border: 2px solid black;
+    margin: 150px 0px 0px 300px;
+
+    
+}
+
+#content{
+   text-align: left;
+   padding-top: 50px;
+   padding-left: 50px;
+}
+
+#DOB{
+    text-align: left;
+}

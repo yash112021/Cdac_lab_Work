@@ -1,0 +1,52 @@
+<!-- half of the code is remaining -->
+<!-- 3) create html page -  with 
+	1 textfield and multiple buttons 
+	
+button captions are - 1)Add at End 
+		 2) Add at Start
+		3) delete from end 
+		4) delete from start
+		5) display odd numbers 
+		6) display even numbers
+hint -  use Array predined methods -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" name="f1">
+    <label for="ip">Input text</label>
+    <input type="text" name="box" id="ip">
+    <br>
+
+    <br>
+    <button id="push" type="button" onclick="hello()">Add at end</button>
+    <button id="unshift" type="button" onclick="">Add at start</button>
+    <br>
+    <button id="pop" type="button" onclick="">delete from end</button>
+    <button id="shift" type="button" onclick="">delete from start</button>
+    <br>
+    <button id="odd" type="button" onclick="">display odd numbers</button>
+    <button id="event" type="button" onclick="">display even numbers</button>
+</form>
+    <script>
+   
+        console.log(a)
+     let arr=[5,8,9,7,8,45,54];
+    //    document.write(a);
+    function hello(arr){
+         let a=document.getElementById("ip").value;
+        arr.push(a);
+          document.write(arr);
+    }
+    
+     
+</script>
+
+</body>
+</html> 
+

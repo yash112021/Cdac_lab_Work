@@ -1,0 +1,57 @@
+In Java, streams are a feature introduced in Java 8 that allow you to process collections of data in a functional and declarative way. A stream is essentially a sequence of elements that can be processed using various operations like filtering, mapping, and reducing. Streams are not data structures themselves; instead, they work on data sources like collections, arrays, or I/O channels.
+
+Key Characteristics of Streams
+
+Streams are not storage mechanisms. They do not hold data but operate on existing data sources. For example, you can create a stream from a List or an Array.
+
+Streams are immutable. They do not modify the original data source but produce a new result based on the operations applied.
+
+Streams support lazy evaluation. Intermediate operations (like filtering or mapping) are not executed until a terminal operation (like collecting or counting) is invoked. This makes streams efficient.
+
+Streams can be parallelized. You can process large datasets in parallel using parallelStream() to take advantage of multi-core processors.
+
+Streams are single-use. Once a stream is consumed (i.e., a terminal operation is performed), it cannot be reused.
+
+Common Operations on Streams
+
+Streams support two types of operations: intermediate and terminal.
+
+Intermediate Operations
+
+These operations transform a stream into another stream and are lazy, meaning they are not executed until a terminal operation is called. Examples include:
+
+filter(): Filters elements based on a condition.
+
+map(): Transforms each element in the stream.
+
+sorted(): Sorts the elements.
+
+distinct(): Removes duplicates.In Java, streams are a feature introduced in Java 8 that allow you to process collections of data in a functional and declarative way. A stream is essentially a sequence of elements that can be processed using various operations like filtering, mapping, and reducing. Streams are not data structures themselves; instead, they work on data sources like collections, arrays, or I/O channels.
+
+Key Characteristics of Streams
+
+Streams are not storage mechanisms. They do not hold data but operate on existing data sources. For example, you can create a stream from a List or an Array.
+
+Streams are immutable. They do not modify the original data source but produce a new result based on the operations applied.
+
+Streams support lazy evaluation. Intermediate operations (like filtering or mapping) are not executed until a terminal operation (like collecting or counting) is invoked. This makes streams efficient.
+
+Streams can be parallelized. You can process large datasets in parallel using parallelStream() to take advantage of multi-core processors.
+
+Streams are single-use. Once a stream is consumed (i.e., a terminal operation is performed), it cannot be reused.
+
+Common Operations on Streams
+
+Streams support two types of operations: intermediate and terminal.
+
+Intermediate Operations
+
+These operations transform a stream into another stream and are lazy, meaning they are not executed until a terminal operation is called. Examples include:
+
+filter(): Filters elements based on a condition.
+
+map(): Transforms each element in the stream.
+
+sorted(): Sorts the elements.
+
+distinct(): Removes duplicates.
