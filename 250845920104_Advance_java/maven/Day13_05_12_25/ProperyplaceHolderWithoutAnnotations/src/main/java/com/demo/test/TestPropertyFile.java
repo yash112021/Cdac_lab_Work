@@ -11,7 +11,7 @@ public class TestPropertyFile {
 		// creating the ApplicationContext
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
 		// getting the Bean
-		MyUser usr=(MyUser) ctx.getBean("");
+		MyUser usr=(MyUser) ctx.getBean("u1");
 		System.out.println(usr);
 	}
 }
