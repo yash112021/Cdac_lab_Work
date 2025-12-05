@@ -1,0 +1,16 @@
+package com.demo.beans;
+
+public class Product {
+	// data Members of the Product class
+	private int pid;
+	private String pname;
+	private int qty;
+	private double price;
+	
+	// defalut constructor 
+	public Product() {
+		super();
+	}
+	
+	
+}

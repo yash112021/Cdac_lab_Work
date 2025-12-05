@@ -1,0 +1,26 @@
+package com.demo.beans;
+
+public class Product {
+	// data Members of the Product class
+	private int pid;
+	private String pname;
+	private int qty;
+	private double price;
+	
+	// defalut constructor 
+	public Product() {
+		super();
+	}
+
+	// paramterised constructror 
+	public Product(int pid, String pname, int qty, double price) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.qty = qty;
+		this.price = price;
+	}
+	
+	
+	
+}

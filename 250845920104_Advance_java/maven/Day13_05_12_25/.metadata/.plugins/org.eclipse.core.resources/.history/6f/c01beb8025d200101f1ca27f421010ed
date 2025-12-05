@@ -1,0 +1,11 @@
+package com.demo.beans;
+
+import java.util.List;
+
+public class Order {
+	//data Member
+	private int orderid;
+	private String cname;
+	// now here we are using the collection one order can have the multipe the product so taking the list
+	private List<Product> plist;
+}

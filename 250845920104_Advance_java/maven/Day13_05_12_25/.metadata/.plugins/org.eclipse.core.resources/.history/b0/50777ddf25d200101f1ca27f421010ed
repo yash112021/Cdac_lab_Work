@@ -1,0 +1,8 @@
+package com.demo.test;
+
+public class TestCollection {
+	public static void main(String[] args) {
+		// now here we are going to reterive the object created by the spring 
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+	}
+}

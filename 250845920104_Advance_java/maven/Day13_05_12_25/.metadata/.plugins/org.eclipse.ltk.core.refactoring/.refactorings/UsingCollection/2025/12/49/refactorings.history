@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;UsingCollection_demo/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;UsingCollection&apos;&#x0D;&#x0A;- Destination element: &apos;UsingCollection_demo/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     UsingCollection/src/main/java/com.demo.test&#x0D;&#x0A;     UsingCollection/src/main/java/com.demo.beans" description="Copy packages" destination="=UsingCollection_demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo.test" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo.beans" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1764971830020" version="1.0"/>
+</session>

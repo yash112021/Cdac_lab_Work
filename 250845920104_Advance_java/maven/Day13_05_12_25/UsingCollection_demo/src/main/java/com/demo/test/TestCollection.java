@@ -1,0 +1,16 @@
+package com.demo.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.demo.beans.Order;
+
+public class TestCollection {
+	public static void main(String[] args) {
+		// now here we are going to reterive the object created by the spring 
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+		Order ord=(Order) ctx.getBean("");
+		System.out.println(ord);
+		
+	}
+}
