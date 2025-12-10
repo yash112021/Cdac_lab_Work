@@ -1,0 +1,15 @@
+package com.demo.springboot_mvcProduct_CURD.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping("/product")
+public class ProductController {
+	
+	public ModelAndView showProduct() {
+		
+		return new ModelAndView();
+	}
+}

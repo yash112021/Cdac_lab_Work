@@ -1,0 +1,17 @@
+package com.demo.springboot_mvcProduct_CURD.beans;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Product {
+	@Id
+	private int pid;
+	private String name;
+	private int qty;
+	private double price;
+	@DateTimeFormat(pattern ="yyyy-MM-dd")
+	
+}

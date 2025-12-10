@@ -1,0 +1,16 @@
+package com.demo.springboot_mvcProduct_CURD.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller("/")
+public class HelloController {
+	
+	
+	@GetMapping("/")
+	public ModelAndView sayWelcome() {
+		String msg1 ="Hello Welcome to our MVC of the Spring Boot Project";
+		return new ModelAndView("hello","mmssgg",msg1);
+	}
+}

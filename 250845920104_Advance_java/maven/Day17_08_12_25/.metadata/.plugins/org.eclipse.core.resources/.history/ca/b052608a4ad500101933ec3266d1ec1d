@@ -1,0 +1,26 @@
+package com.demo.springboot_mvcProduct_CURD.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.springboot_mvcProduct_CURD.beans.Product;
+import com.demo.springboot_mvcProduct_CURD.dao.ProductDao;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+	// now here we need to create the object of the dao
+	@Autowired
+	ProductDao pdao;
+	
+	
+	// this funtion will return us all the Products
+	@Override
+	public List<Product> addnewProject() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

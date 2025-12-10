@@ -1,0 +1,11 @@
+
+
+import java.util.List;
+
+import com.demo.MVC_CURD_SPRINGBoot.beans.Product;
+
+public interface ProductService {
+
+	List<Product> addnewProject();
+
+}

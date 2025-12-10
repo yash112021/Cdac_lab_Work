@@ -1,0 +1,13 @@
+package com.demo.MVC_CURD_SPRINGBoot.service;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringbootMvcProductCurdApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbootMvcProductCurdApplication.class, args);
+	}
+
+}

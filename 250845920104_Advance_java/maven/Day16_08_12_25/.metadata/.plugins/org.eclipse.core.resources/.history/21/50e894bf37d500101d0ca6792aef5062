@@ -1,0 +1,16 @@
+package com.demo.SpringBoot_RestWebService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class SpringBootRestWebServiceApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=run(SpringBootRestWebServiceApplication.class, args);
+		// we will see the object line creates how many object for us
+		for(name String:ctx)
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.demo.springboot_mvcProduct_CURD.beans;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Product {
+	@Id
+	private int pid;
+	private String name;
+	private int qty;
+	private double price
+	
+}

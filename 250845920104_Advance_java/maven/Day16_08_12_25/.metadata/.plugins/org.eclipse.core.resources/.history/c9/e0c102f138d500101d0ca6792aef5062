@@ -1,0 +1,9 @@
+spring.application.name=SpringBoot_RestWebService
+
+
+#now we need to set out details of configuration of the mysql
+spring.datasource.url=jdbc:mysql://192.168.10.117/dac104?useSSL=false
+
+spring.datasource.username=dac104
+spring.datasource.password=welcome
+spring.datasource.driver-class-name

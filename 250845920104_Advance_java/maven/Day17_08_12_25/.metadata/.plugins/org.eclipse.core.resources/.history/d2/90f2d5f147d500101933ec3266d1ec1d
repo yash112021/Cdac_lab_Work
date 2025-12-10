@@ -1,0 +1,7 @@
+spring.application.name=springboot_mvcProduct_CURD
+
+server.port=9090
+
+#As we are previously doing this setting in the xml but we are not having the xml or we can say add view Resolver
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp

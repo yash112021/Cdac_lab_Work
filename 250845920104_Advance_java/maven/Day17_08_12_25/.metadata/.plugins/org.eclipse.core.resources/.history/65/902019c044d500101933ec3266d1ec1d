@@ -1,0 +1,5 @@
+package com.demo.springboot_mvcProduct_CURD.dao;
+
+public interface ProductDao {
+
+}

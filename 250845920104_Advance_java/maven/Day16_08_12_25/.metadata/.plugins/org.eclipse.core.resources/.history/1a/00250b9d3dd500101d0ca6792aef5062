@@ -1,0 +1,12 @@
+package com.demo.SpringBoot_RestWebService.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomController {
+	
+	public String sayHello() {
+		
+	}
+	
+}

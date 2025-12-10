@@ -1,0 +1,5 @@
+package com.demo.SpringBoot_RestWebService.controller;
+
+public class WelcomController {
+	
+}

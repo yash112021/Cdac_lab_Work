@@ -1,0 +1,5 @@
+package com.demo.springboot_mvcProduct_CURD.controller;
+
+public class Product {
+
+}

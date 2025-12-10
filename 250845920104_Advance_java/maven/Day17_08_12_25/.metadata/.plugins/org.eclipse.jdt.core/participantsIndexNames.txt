@@ -1,0 +1,7 @@
+INDEX VERSION 1.132
+C:\Users\IET\Desktop\maven\Day17_08_12_25\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2916580243.index
+\MVC_CURD_SPRINGBoot\src\main\java
+C:\Users\IET\Desktop\maven\Day17_08_12_25\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4038647525.index
+\SpringBootMVCProductCrud\src\main\java
+C:\Users\IET\Desktop\maven\Day17_08_12_25\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1051935440.index
+\springboot_mvcProduct_CURD\src\main\java

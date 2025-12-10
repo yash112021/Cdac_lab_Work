@@ -1,0 +1,22 @@
+spring.application.name=MVC_CURD_SPRINGBoot
+
+
+server.port=8181
+
+#As we are previously doing this setting in the xml but we are not having the xml or we can say add view Resolver
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+
+#now setting the sql connection in
+spring.datasource.url=jdbc:mysql://192.168.10.117:3306/dac104?useSSL=false
+spring.datasource.username=dac104
+spring.datasource.password=welcome
+
+
+#this is are the hibernate properties that we are going to user
+#hibernate properties
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
