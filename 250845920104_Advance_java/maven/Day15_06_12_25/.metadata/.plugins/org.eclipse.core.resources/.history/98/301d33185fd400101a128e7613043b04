@@ -1,0 +1,54 @@
+package com.demo.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.beans.MyUser;
+import com.demo.beans.Product;
+import com.demo.service.ProductService;
+
+@Controller
+@RequestMapping("/product")
+public class ProductController {
+	
+	// now we require the object of the seviceof Product now using the AutoWired
+	@Autowired
+	ProductService pservie;
+	
+	//now we need to show the product 
+	@GetMapping("/productshow")
+	public ModelAndView getAllProducts(HttpSession sess) {
+		// taking out the user form the session and again doing the validaions on the table
+		MyUser usr=(MyUser) sess.getAttribute("user");
+		if(usr!=null&&usr.getRole().equals("admin")) {
+			List<Product>lst=pservie.getAllProducts();
+			return new ModelAndView("productshow","lst1",lst);
+			//if the user is valid then we are sending the it to show product jsp
+		}
+		else {
+			// we redirect the  user to the login page
+			return new ModelAndView("loginpage","msg","you are not the valid user to access this data-->");
+		}
+		
+	}
+	
+	public ModelAndView addProduct(Model mymodel) {
+		// now adding the product to the server
+	mymodel.addAttribute(mymodel new product())	
+	}
+	
+	@GetMapping("/addproduct")
+	public String showproductform(Model myModel) {
+		myModel.addAttribute("p1",new Product());
+		return "insertProduct";
+	}
+	
+}

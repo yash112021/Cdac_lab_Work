@@ -1,0 +1,12 @@
+package com.demo.categorywebservice1;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestClient;
+
+public class RestClientConfig {
+	 @Bean
+	    public RestClient restClient() {
+	    	System.out.println("restclient is ready");
+	        return RestClient.create();
+	    }
+}

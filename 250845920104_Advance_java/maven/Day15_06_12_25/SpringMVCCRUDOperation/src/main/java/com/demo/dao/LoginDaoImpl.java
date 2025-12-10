@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-
 import com.demo.beans.MyUser;
 
 @Repository
@@ -20,8 +19,8 @@ public class LoginDaoImpl implements LoginDao{
 	@Override
 	public MyUser valUser(String uname, String password) {
 		try {
-//			SELECT * FROM valuser WHERE `user name` = 'GITA' AND pwd = 'sales@2017';
-		MyUser u=jdbcTemplate.queryForObject("Select * from valuser where `user name`=? and pwd=?",
+//			SELECT * FROM valuser WHERE Ename = 'GITA' AND pwd = 'sales@2017';
+		MyUser u=jdbcTemplate.queryForObject("Select * from valuser where Ename=? and pwd =?",
 				new Object[] {uname,password},BeanPropertyRowMapper.newInstance(MyUser.class));
 		return u;
 		}catch(EmptyResultDataAccessException e) {

@@ -15,7 +15,7 @@ public class ProductDaoImpl implements ProductDao{
 	@Autowired
 	JdbcTemplate jdbcTem;
 
-
+	
 	public List<Product> findAllProdcut() {
 		List<Product> plist=jdbcTem.query("select * from product1",(rs,numrows)->{
 			Product p=new Product();

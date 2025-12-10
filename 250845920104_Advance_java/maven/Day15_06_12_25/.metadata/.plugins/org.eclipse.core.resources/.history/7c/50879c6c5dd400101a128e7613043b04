@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1><i>${msg}</i></h1>
+	
+<!-- 	now giving the table heading  -->
+<table border="2">
+
+	<tr> <th>ID</th> <th>PNAME</th> <th>QTY</th> <th>PRICE</th> <th>MFGDATE</th> <th>CID</th> </tr>
+	
+	<!-- now by using the for loop printing the data coming from the modelandView -->
+	<c:forEach var="p" items="${lst1}">
+	<tr> <td>${p.id}</td> <td>${p.pname}</td> <td>${p.qty}</td> <td>${p.price}</td> <td>${p.mfgdate }</td> <td>${p.cid}</td> 
+	
+	<td><a href="deleteProduct/${p.id} ">delete</a></td>  <td><a href="editproduct/${p.id}">edit</a></td> </tr>
+	
+	</g:forEach>
+
+
+</table>
+</body>
+</html>

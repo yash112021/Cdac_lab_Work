@@ -16,14 +16,21 @@
 	<tr> <th>ID</th> <th>PNAME</th> <th>QTY</th> <th>PRICE</th> <th>MFGDATE</th> <th>CID</th> </tr>
 	
 	<!-- now by using the for loop printing the data coming from the modelandView -->
-	<g:forEach var="p" items="${plist} ">
+	<c:forEach var="p" items="${lst1}">
 	<tr> <td>${p.id}</td> <td>${p.pname}</td> <td>${p.qty}</td> <td>${p.price}</td> <td>${p.mfgdate }</td> <td>${p.cid}</td> 
 	
-	<td><a href="deleteProduct/${p.pid} ">delete</a></td>  <td><a href="editproduct/${p.pid}">edit</a></td> </tr>
+	<td><a href="deleteProduct/${p.id} ">delete</a></td>  <td><a href="editproduct/${p.id}">edit</a></td> </tr>
 	
-	</g:forEach>
+	</c:forEach>
 
 
 </table>
+
+<hr><hr>
+
+<!-- Adding the product inside the  -->
+<a href="/addproduct">add Prdouct</a>
+
+
 </body>
 </html>

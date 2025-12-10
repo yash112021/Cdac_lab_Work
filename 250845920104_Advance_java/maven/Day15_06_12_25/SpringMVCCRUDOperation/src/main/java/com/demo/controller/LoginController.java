@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+
+
+
 import com.demo.beans.MyUser;
-import com.demo.service.LoginService;
+import com.demo.service.LoginService;//
 
 @Controller
 @RequestMapping("/login")
@@ -19,6 +22,12 @@ public class LoginController {
 	
 	@Autowired
 	LoginService lservice;
+	
+	
+	@GetMapping("/")
+	public String hompage() {
+		return "index";
+	}
 	
 	@GetMapping("/loginuser")
 	public String showForm() {
