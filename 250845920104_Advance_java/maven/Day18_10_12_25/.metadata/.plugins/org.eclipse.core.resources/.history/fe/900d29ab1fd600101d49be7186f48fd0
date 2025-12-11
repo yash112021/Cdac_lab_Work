@@ -1,0 +1,10 @@
+package com.demo.JWTTokens.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProductController {
+	
+	// now in the rest controller we are using the ResponseEntity
+	
+}

@@ -12,4 +12,8 @@ public interface ProductService {
 
 	void addprd(Product product);
 
+	void deletebyId(int pid);
+
+	Product findById(int pid);
+
 }

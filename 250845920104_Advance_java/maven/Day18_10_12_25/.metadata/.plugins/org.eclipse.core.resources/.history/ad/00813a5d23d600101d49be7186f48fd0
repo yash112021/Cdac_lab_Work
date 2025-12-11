@@ -1,0 +1,6 @@
+package com.demo.JWTTokens.beans;
+
+public class MyUser {
+	 private String uname;
+	 private String password;
+}

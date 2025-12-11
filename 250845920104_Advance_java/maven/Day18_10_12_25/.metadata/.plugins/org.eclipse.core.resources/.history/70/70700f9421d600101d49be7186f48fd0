@@ -1,0 +1,21 @@
+package com.demo.JWTTokens.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.demo.JWTTokens.beans.Product;
+
+@Service
+public class ProductServiceImpl implements ProductService{
+
+	//making the object of ptroduct dao
+	Prody
+	
+	
+	@Override
+	public List<Product> getAllProduct() {
+		
+	}
+
+}

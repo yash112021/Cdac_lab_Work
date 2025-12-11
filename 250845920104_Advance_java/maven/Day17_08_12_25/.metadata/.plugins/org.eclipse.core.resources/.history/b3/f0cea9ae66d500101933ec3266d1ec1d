@@ -1,0 +1,42 @@
+package com.demo.MVC_CURD_SPRINGBoot.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.MVC_CURD_SPRINGBoot.beans.Product;
+import com.demo.MVC_CURD_SPRINGBoot.dao.ProductDao;
+
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+	// now here we need to create the object of the dao
+	@Autowired
+	ProductDao pdao;
+	
+	
+	// this funtion will return us all the Products
+	@Override
+	public List<Product> addnewProject() {
+		return pdao.findAll();  // here the find all is the method of the JPA
+	}
+
+
+	// function for adding the product
+	@Override
+	public void addprd(Product product) {
+		// for adding you need to save 
+		pdao.save(product);
+		
+	}
+
+	// deleting by id
+	@Override
+	public void deletebyId(int pid) {
+		
+		
+	}
+
+}

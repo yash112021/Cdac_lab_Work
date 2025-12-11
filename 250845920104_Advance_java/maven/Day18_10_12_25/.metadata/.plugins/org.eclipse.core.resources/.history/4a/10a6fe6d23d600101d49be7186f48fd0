@@ -1,0 +1,16 @@
+package com.demo.JWTTokens.beans;
+
+public class MyUser {
+	 private String uname;
+	 private String password;
+	 private String role;
+	 
+	 
+	 /default constructor
+	public MyUser(String uname, String password, String role) {
+		super();
+		this.uname = uname;
+		this.password = password;
+		this.role = role;
+	}
+}

@@ -1,6 +1,7 @@
 package com.demo.MVC_CURD_SPRINGBoot.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +31,25 @@ public class ProductServiceImpl implements ProductService {
 		// for adding you need to save 
 		pdao.save(product);
 		
+	}
+
+	// deleting by id
+	@Override
+	public void deletebyId(int pid) {
+		Optional<Product> p=pdao.findById(pid);
+		if(p.isPresent()) {
+			Product p2=p.get();
+			pdao.delete(p2);
+		}
+		
+	}
+
+
+	@Override
+	public Product findById(int pid) {
+	
+		Optional<Product> op = pdao.findById(pid);
+		return pdao.;
 	}
 
 }

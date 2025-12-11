@@ -1,0 +1,13 @@
+package com.demo.JWTTokens.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.demo.JWTTokens.beans.MyUser;
+
+public interface LoginDao extends JpaRepository<MyUser, Integer>{
+
+	@Query("select * from valUser where `user name")
+	MyUser findByUname(String username);
+
+}

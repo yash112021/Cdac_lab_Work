@@ -1,0 +1,5 @@
+package com.demo.JWTTokens.dao;
+
+public interface ProductDao extends JpaReposito{
+
+}
